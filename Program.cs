@@ -58,3 +58,30 @@
 //   Console.WriteLine("Число является ЧЕТНЫМ " + number);
 // }
 
+// Задача 8: 
+// Напишите программу, которая на вход принимает число (N), 
+// а на выходе показывает все чётные числа от 1 до N.
+
+Console.Write("Введите положительное число: ");
+int number = Convert.ToInt32(Console.ReadLine());
+
+int current = 1;
+bool not = true;
+
+Console.WriteLine("Чётные числа от 1 до " + number);
+while (current <= number)
+{
+  if (current % 2 != 1)
+  {
+    Console.Write(current + ", ");
+    not = false;
+  }
+  current++;
+}
+  if (not)
+   {
+     Console.WriteLine("Нет чётных чисел!");
+   }
+
+
+
